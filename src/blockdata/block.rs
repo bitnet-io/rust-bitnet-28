@@ -93,9 +93,9 @@ impl BlockHeader {
         let (mant, expt) = {
             let unshifted_expt = bits >> 24;
             if unshifted_expt <= 3 {
-                ((bits & 0xFFFFFF) >> (8 * (3 - unshifted_expt as usize)), 0)
+                ((bits & 0x0FFFFF) >> (8 * (3 - unshifted_expt as usize)), 0)
             } else {
-                (bits & 0xFFFFFF, 8 * ((bits >> 24) - 3))
+                (bits & 0x0FFFFF, 8 * ((bits >> 24) - 3))
             }
         };
 

@@ -66,7 +66,7 @@ pub const SUBSIDY_HALVING_INTERVAL: u32 = 6_000_000;
 
 /// In Bitcoind this is insanely described as ~((u256)0 >> 32)
 pub fn max_target(_: Network) -> Uint256 {
-    Uint256::from_u64(0xFFFF).unwrap() << 208
+    Uint256::from_u64(0x0FFF).unwrap() << 208
 }
 
 /// The maximum value allowed in an output (useful for sanity checking,
