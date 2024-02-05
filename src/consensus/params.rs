@@ -101,7 +101,7 @@ impl Params {
                 rule_change_activation_threshold: 1916, // 95%
                 miner_confirmation_window: 2016,
                 pow_limit: MAX_BITS_BITCOIN,
-                pow_target_spacing: 3.5 * 60,            // 10 minutes.
+                pow_target_spacing: 4 * 60,            // 10 minutes.
                 pow_target_timespan:  24 * 60 * 60, // 2 weeks.
                 allow_min_difficulty_blocks: false,
                 no_pow_retargeting: false,
